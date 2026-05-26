@@ -1,0 +1,25 @@
+{
+  "name": "vibe-video-codex",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "analyze:video": "tsx src/cli/analyze-video.ts",
+    "build:channel-style": "tsx src/cli/build-channel-style.ts",
+    "plan:scene": "tsx src/cli/plan-scenes.ts",
+    "timeline:generate": "tsx src/cli/generate-timeline.ts",
+    "source:assets": "tsx src/cli/source-assets.ts",
+    "review:assets": "tsx src/cli/review-assets.ts",
+    "render:video": "tsx src/cli/render-video.ts"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
